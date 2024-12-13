@@ -1,0 +1,54 @@
+/* Efecto de zoom en las imágenes */
+.zoomable {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .zoomable:hover {
+    transform: scale(1.1); /* Zoom al pasar el puntero */
+  }
+  
+ /* Estilos del modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    position: right;
+    max-width: 90%; /* La imagen no superará el 90% del ancho de la pantalla */
+    max-height: 90%; /* La imagen no superará el 90% de la altura de la pantalla */
+    overflow: hidden; /* Asegura que no haya desbordamiento */
+  }
+  
+  .modal-content img {
+    width: auto; /* Ajusta automáticamente el ancho */
+    height: auto; /* Ajusta automáticamente la altura */
+    max-width: 35%; /* No supera el ancho máximo del contenedor */
+    max-height: 35%; /* No supera la altura máxima del contenedor */
+    border-radius: 5px;
+    object-fit: contain; /* Mantiene la proporción de la imagen */
+  }
+  
+  /* Cambia el cursor al pasar por encima del modal */
+  .modal-overlay:hover {
+    cursor: pointer;
+  }
+  /* Estilo para imágenes de productos */
+  .product-image {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .product-image:hover {
+    transform: scale(1.1); /* Ampliar ligeramente la imagen al pasar el mouse */
+  }
+  

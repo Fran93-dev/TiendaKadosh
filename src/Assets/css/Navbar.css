@@ -1,0 +1,33 @@
+/* Estilo para el logo */
+.navbar-logo {
+    border-radius: 50%;
+  }
+  
+  /* Enlaces del navbar */
+  .nav-link {
+    color: #fff;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  /* Cambiar color al pasar el puntero */
+  .nav-link:hover {
+    color: #f20adb; /* Amarillo dorado */
+    background-color: rgba(10, 227, 242); /* Fondo semi-transparente */
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  /* Texto de la marca */
+  .navbar-brand-text {
+    color: #f20adb; /* Amarillo dorado */
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  /* Ajustar para dispositivos pequeños */
+  @media (max-width: 768px) {
+    .navbar-brand-text {
+      font-size: 1rem;
+    }
+  }
+  
