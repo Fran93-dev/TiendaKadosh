@@ -52,9 +52,9 @@
   
   /* Bloques de citas */
   .blockquote {
-    background: #f9f9f9;
+    background: rgb(174, 135, 135);
     padding: 1.5rem;
-    border-left: 4px solid #007bff;
+    border-left: 4px solid #525e6c;
     font-style: italic;
   }
   
@@ -63,4 +63,65 @@
     font-size: 0.9rem;
     color: #555;
   }
-  
+  /* Animación del texto en el banner */
+.banner-title {
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  opacity: 1;
+  animation: fadeInText 3s ease forwards;
+}
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Efecto de desvanecimiento y desplazamiento */
+.fade-right {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fadeInRight 1s ease forwards;
+}
+
+.fade-left {
+  opacity: 0;
+  transform: translateX(50px);
+  animation: fadeInLeft 1s ease forwards;
+}
+
+@keyframes fadeInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* Estilo para el texto con efecto de máquina de escribir */
+.section-text {
+  font-family: 'Courier New', Courier, monospace;
+  white-space: pre-wrap; /* Mantiene los saltos de línea */
+  overflow: hidden;      /* Oculta el texto sobrante */
+  border-right: 2px solid #333;
+  animation: blink 0.7s step-end infinite; /* Parpadeo del cursor */
+}
+
+@keyframes blink {
+  from {
+    border-right-color: #333;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
