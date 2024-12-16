@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import aboutImage1 from "../Styles/images/logo.jpeg";
 import aboutImage2 from "../Styles/images/logo2.jpg";
-import bgImage from "../Styles/images/002.jpg";
+import bgImage from "../Styles/images/coffe-3.jpg";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../Assets/css/MySlider.css';

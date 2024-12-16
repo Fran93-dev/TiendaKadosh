@@ -1,7 +1,8 @@
 import React from 'react';
-import cacaoField from '../Styles/images/stock.jpg'; // imagen de la región
-import production from '../Styles/images/1.jpeg'; // imagen del proceso
-import chocolateBar from '../Styles/images/2.jpg'; // imagen del producto final
+import cacaoField from '../Styles/images/palocacao.jpg'; // imagen de la región
+import production from '../Styles/images/2.jpg'; // imagen del proceso
+import chocolateBar from '../Styles/images/1.jpeg'; // imagen del producto final
+import '../Assets/css/StoryPacking.css'; // Archivo CSS para estilos
 
 const StoryPackaging = () => {
   const packages = [
@@ -26,14 +27,20 @@ const StoryPackaging = () => {
   ];
 
   return (
-    <div className="container">
-      <h2 className="text-center my-4">Empaques con Historia</h2>
+    <div className="container story-packaging">
+      <h2 className="text-center my-5 title">Empaques con Historia</h2>
       <div className="row">
         {packages.map((pkg) => (
           <div className="col-md-4" key={pkg.id}>
-            <div className="card mb-4">
-              <img src={pkg.image} className="card-img-top" alt={pkg.title} />
-              <div className="card-body">
+            <div className="card custom-card mb-4">
+              <div className="image-container">
+                <img
+                  src={pkg.image}
+                  className="card-img-top"
+                  alt={pkg.title}
+                />
+              </div>
+              <div className="card-body text-center">
                 <h5 className="card-title">{pkg.title}</h5>
                 <p className="card-text">{pkg.description}</p>
               </div>
