@@ -25,15 +25,6 @@ const useTypewriter = (text, speed = 50) => {
 };
 
 const SobreNosotros = () => {
-  const historyText = useTypewriter(
-    "En nuestra tienda, celebramos el arte de producir café y cacao en crema artesanal. Desde nuestros inicios, hemos trabajado con agricultores locales para garantizar productos de la más alta calidad y sostenibilidad."
-  );
-
-  const missionText = useTypewriter(
-    "Nuestra misión es proporcionar experiencias únicas a través de productos de alta calidad, preservando las tradiciones y apoyando a las comunidades locales.",
-    30
-  );
-
   const bannerText = useTypewriter("Acerca de Nosotros", 100);
 
   return (
@@ -55,33 +46,61 @@ const SobreNosotros = () => {
       {/* Contenido */}
       <section className="content-section">
         <div className="container">
-          {/* Historia de la empresa */}
+          {/* Bienvenida */}
           <div className="row align-items-center mb-5">
-            <div className="col-md-7 text-left fade-right">
-              <h3 className="section-title">Nuestra Historia</h3>
-              <p className="section-text">{historyText}</p>
-            </div>
-            <div className="col-md-5 fade-left">
-              <img src={aboutImage1} alt="Nuestra historia" className="img-fluid rounded shadow" />
+            <div className="col-md-12 text-center">
+              <h3 className="section-title">Bienvenido@ a Kadosh</h3>
+              <p className="section-text">
+                El sabor auténtico del cacao en polvo. Aquí encontrarás una selección
+                premium de cacao en polvo, ideal para transformar tus recetas y disfrutar
+                del verdadero sabor del cacao. Ya sea para preparar bebidas reconfortantes,
+                repostería o para añadir un toque especial a tus platillos, nuestros productos
+                están elaborados con el mejor cacao para garantizar calidad y sabor en cada uso.
+              </p>
             </div>
           </div>
 
-          {/* Misión de la empresa */}
-          <div className="row align-items-center">
-            <div className="col-md-5 order-md-1 fade-right">
-              <img src={aboutImage2} alt="Nuestra misión" className="img-fluid rounded shadow" />
-            </div>
-            <div className="col-md-7 order-md-2 fade-left text-right">
+          {/* Nuestra Misión */}
+          <div className="row align-items-center mb-5">
+            <div className="col-md-7 text-left fade-right">
               <h3 className="section-title">Nuestra Misión</h3>
-              <p className="section-text">{missionText}</p>
-              <blockquote className="blockquote mt-4">
-                <p>
-                  "El verdadero sabor de la vida se encuentra en las cosas
-                  simples, como el aroma de un buen café o la calidez de un
-                  cacao cremoso."
-                </p>
-                <footer className="blockquote-footer">Inspiración diaria</footer>
-              </blockquote>
+              <p className="section-text">
+                Nuestra misión es ser un motor de desarrollo económico en Lérida, Tocoa, Colón,
+                promoviendo el consumo de chocolate mediante la producción de cacao en polvo de
+                calidad superior, buscando el desarrollo económico de la comunidad. Nos comprometemos
+                a ofrecer productos de la más alta calidad, cultivados y procesados con esmero,
+                reflejando el sabor y la tradición de nuestra tierra.
+              </p>
+            </div>
+            <div className="col-md-5 fade-left">
+              <img src={aboutImage1} alt="Nuestra misión" className="img-fluid rounded shadow" />
+            </div>
+          </div>
+
+          {/* Sostenibilidad */}
+          <div className="row align-items-center mb-5">
+            <div className="col-md-5 fade-right">
+              <img src={aboutImage2} alt="Sostenibilidad" className="img-fluid rounded shadow" />
+            </div>
+            <div className="col-md-7 text-right fade-left">
+              <h3 className="section-title">Sostenibilidad</h3>
+              <p className="section-text">
+                Buscamos innovar constantemente en la producción, asegurando procesos que respeten el
+                medio ambiente y beneficien a nuestros productores locales. Desde Lérida, Tocoa, Colón,
+                cultivamos un futuro sostenible con el sabor del mejor cacao.
+              </p>
+            </div>
+          </div>
+
+          {/* Cultura y Tradición */}
+          <div className="row align-items-center mb-5">
+            <div className="col-md-12 text-center">
+              <h3 className="section-title">Cultura y Tradición del Cacao</h3>
+              <p className="section-text">
+                El cacao es nuestra pasión y nuestra herencia. En Lérida, Tocoa, Colón, trabajamos con
+                dedicación para mantener vivas las tradiciones del cultivo y la producción de cacao,
+                ofreciendo productos que mantienen el sabor y la calidad de nuestra región.
+              </p>
             </div>
           </div>
         </div>

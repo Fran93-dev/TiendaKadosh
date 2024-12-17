@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/heading-has-content */
 import React, { useState } from 'react';
 import logo4 from '../Styles/images/bolsacacaco.png';
 import logoma from '../Styles/images/cashe.jpg';
@@ -20,7 +21,7 @@ const ProductList = () => {
     { id: 5, name: 'Mantequilla de Marañón', price: 5.0, description: 'Ideal para repostería o consumo directo.', image: logoma },
     { id: 6, name: 'Mantequilla de Maní', price: 5.0, description: 'Ideal para repostería o consumo directo.', image: logo5 },
     { id: 7, name: 'Mantequilla de Almendra', price: 5.0, description: 'Ideal para repostería o consumo directo.', image: logo6 },
-    { id: 7, name: 'Mantequilla de Macadamia', price: 5.0, description: 'Ideal para repostería o consumo directo.', image: logo7 },
+    { id: 8, name: 'Mantequilla de Macadamia', price: 5.0, description: 'Ideal para repostería o consumo directo.', image: logo7 },
   ];
 
   const openModal = (product) => {
@@ -33,7 +34,8 @@ const ProductList = () => {
 
   return (
     <div className="container my-5">
-      <h2 className="text-center mb-4">Nuestros Productos</h2>
+      <h2 className="text-center mb-4"></h2>
+      <p className='color text-center mb-4'> Nuestros Productos</p> 
       <div className="row justify-content-center">
         {products.map((product) => (
           <div className="col-md-4 col-lg-3 mb-4" key={product.id}>
@@ -67,9 +69,10 @@ const ProductList = () => {
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <button className="close-button" onClick={closeModal}>
               &times;
-            </button>
+            </button>  <div className='letra'> 
             <h3>{selectedProduct.name}</h3>
             <p>{selectedProduct.description}</p>
+            </div> 
             <div className="modal-links">
               <a
                 href={`https://wa.me/32001671?text=Hola, estoy interesado en ${selectedProduct.name}`}

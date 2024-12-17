@@ -1,69 +1,22 @@
 /* Estilos del banner */
 .banner-section {
-    position: relative;
-    height: 40vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-  }
-  
-  .banner-overlay {
-    background: rgba(0, 0, 0, 0.6);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .banner-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  }
-  
-  /* Estilos generales de la sección */
-  .content-section {
-    padding: 4rem 2rem;
-  }
-  
-  .section-title {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #333;
-  }
-  
-  .section-text {
-    font-size: 1.1rem;
-    color: #555;
-    line-height: 1.8;
-    margin-bottom: 1.5rem;
-  }
-  
-  .image-container img {
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-  }
-  
-  .image-container img:hover {
-    transform: scale(1.05);
-  }
-  
-  /* Bloques de citas */
-  .blockquote {
-    background: rgb(174, 135, 135);
-    padding: 1.5rem;
-    border-left: 4px solid #525e6c;
-    font-style: italic;
-  }
-  
-  .blockquote-footer {
-    margin-top: 1rem;
-    font-size: 0.9rem;
-    color: #555;
-  }
-  /* Animación del texto en el banner */
+  position: relative;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.banner-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .banner-title {
   font-size: 3rem;
   color: white;
@@ -74,54 +27,75 @@
 }
 
 @keyframes fadeInText {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+from {
+  opacity: 0;
+}
+to {
+  opacity: 1;
+}
 }
 
 /* Efecto de desvanecimiento y desplazamiento */
 .fade-right {
-  opacity: 0;
-  transform: translateX(-50px);
-  animation: fadeInRight 1s ease forwards;
+opacity: 0;
+transform: translateX(-50px);
+animation: fadeInRight 1s ease forwards;
 }
 
 .fade-left {
-  opacity: 0;
-  transform: translateX(50px);
-  animation: fadeInLeft 1s ease forwards;
+opacity: 0;
+transform: translateX(50px);
+animation: fadeInLeft 1s ease forwards;
 }
 
 @keyframes fadeInRight {
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+to {
+  opacity: 1;
+  transform: translateX(0);
+}
 }
 
 @keyframes fadeInLeft {
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+to {
+  opacity: 1;
+  transform: translateX(0);
 }
+}
+
 /* Estilo para el texto con efecto de máquina de escribir */
 .section-text {
-  font-family: 'Courier New', Courier, monospace;
-  white-space: pre-wrap; /* Mantiene los saltos de línea */
-  overflow: hidden;      /* Oculta el texto sobrante */
-  border-right: 2px solid #333;
-  animation: blink 0.7s step-end infinite; /* Parpadeo del cursor */
+font-family: 'Arial', sans-serif;
+font-size: 1.1rem;
+color: #333;
+white-space: pre-wrap; /* Mantiene los saltos de línea */
+overflow: hidden;      /* Oculta el texto sobrante */
+border-right: 2px solid #333;
+animation: blink 0.7s step-end infinite; /* Parpadeo del cursor */
 }
 
 @keyframes blink {
-  from {
-    border-right-color: rgb(14, 14, 14);
-  }
-  to {
-    border-right-color: transparent;
-  }
+from {
+  border-right-color: rgb(14, 14, 14);
+}
+to {
+  border-right-color: transparent;
+}
+}
+
+/* Estilos generales de la sección */
+.content-section {
+  padding: 4rem 2rem;
+  background-color: #fff; /* Un amarillo cálido y apagado */
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+.section-text {
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
 }

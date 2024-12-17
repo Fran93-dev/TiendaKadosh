@@ -1,5 +1,6 @@
 import React from 'react';
 import Ubicacion from '../components/Map';
+import '../Assets/css/contacto.css';
 
 const FAQ = () => {
   const preguntas = [

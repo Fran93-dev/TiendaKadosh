@@ -1,48 +1,71 @@
 import React from 'react';
-import cacaoField from '../Styles/images/palocacao.jpg'; // imagen de la región
-import production from '../Styles/images/2.jpg'; // imagen del proceso
-import chocolateBar from '../Styles/images/1.jpeg'; // imagen del producto final
-import '../Assets/css/StoryPacking.css'; // Archivo CSS para estilos
+import cacaoHarvest from '../Styles/images/palocacao.jpg'; // Imagen de la cosecha
+import fermentation from '../Styles/images/chocolate.png'; // Imagen de la fermentación
+import drying from '../Styles/images/2.jpeg'; // Imagen del secado
+import roasting from '../Styles/images/cacao-polvo.jpg'; // Imagen del tostado
+import grinding from '../Styles/images/chocolate.jpg'; // Imagen de la molienda
+import packaging from '../Styles/images/bolsacacaco.png'; // Imagen del empaquetado
+import '../Assets/css/StoryPacking.css';
 
-const StoryPackaging = () => {
-  const packages = [
+const Process = () => {
+  const steps = [
     {
       id: 1,
-      title: "Desde la Región",
-      description: "Cada barra comienza en los fértiles campos de cacao.",
-      image: cacaoField,
+      title: "Cosecha de las mazorcas de cacao",
+      description:
+        "Las vainas maduras de cacao son recolectadas manualmente utilizando machetes para garantizar la calidad de los granos.",
+      image: cacaoHarvest,
     },
     {
       id: 2,
-      title: "El Proceso Artesanal",
-      description: "Amor y dedicación en cada paso de producción.",
-      image: production,
+      title: "Fermentación",
+      description:
+        "Los granos se extraen de las vainas y se fermentan durante 5 a 7 días para desarrollar el sabor y aroma característicos del cacao.",
+      image: fermentation,
     },
     {
       id: 3,
-      title: "Tu Chocolate Perfecto",
-      description: "El resultado final: un deleite para tus sentidos.",
-      image: chocolateBar,
+      title: "Secado",
+      description:
+        "Los granos fermentados se secan al sol o en estufas para reducir la humedad y evitar el crecimiento de moho.",
+      image: drying,
+    },
+    {
+      id: 4,
+      title: "Tostado",
+      description:
+        "A temperaturas controladas, el tostado intensifica los sabores y facilita la separación de las cáscaras.",
+      image: roasting,
+    },
+    {
+      id: 5,
+      title: "Descascarado y Triturado",
+      description:
+        "Se separan las cáscaras para obtener nibs, que se muelen hasta formar un licor de cacao grueso.",
+      image: grinding,
+    },
+    {
+      id: 6,
+      title: "Empaque y Distribución",
+      description:
+        "El cacao en polvo final se tamiza, empaqueta herméticamente y se almacena para su distribución.",
+      image: packaging,
     },
   ];
 
   return (
-    <div className="container story-packaging">
-      <h2 className="text-center my-5 title">Empaques con Historia</h2>
+    <div className="container process">
+      <h2 className="text-center my-5 title">Elaboración del Cacao en Polvo</h2>
       <div className="row">
-        {packages.map((pkg) => (
-          <div className="col-md-4" key={pkg.id}>
-            <div className="card custom-card mb-4">
+        {steps.map((step) => (
+          <div className="col-md-4 mb-4" key={step.id}>
+            <div className="card custom-card">
               <div className="image-container">
-                <img
-                  src={pkg.image}
-                  className="card-img-top"
-                  alt={pkg.title}
-                />
+                <img src={step.image} className="card-img-top" alt={step.title} />
               </div>
               <div className="card-body text-center">
-                <h5 className="card-title">{pkg.title}</h5>
-                <p className="card-text">{pkg.description}</p>
+                <h5 className="card-title">{step.title}</h5>
+                <p className="card-text">{step.description}</p>
               </div>
             </div>
           </div>
@@ -52,4 +75,4 @@ const StoryPackaging = () => {
   );
 };
 
-export default StoryPackaging;
+export default Process;

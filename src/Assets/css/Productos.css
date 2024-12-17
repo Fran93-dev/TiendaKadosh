@@ -3,120 +3,127 @@
     border: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
-  
-  .product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Contenedor de la imagen */
-  .product-image-container {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 250px; /* Ajustar según el diseño deseado */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /* Imagen del producto */
-  .product-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-  }
-  
-  .product-image-container:hover .product-image {
-    transform: scale(1.1); /* Zoom al pasar el mouse */
-  }
-  
-  /* Texto y botones centrados */
-  .card-body {
-    padding: 1rem;
-  }
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .product-card {
-    border: none;
-    overflow: hidden;
-    border-radius: 15px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-  }
-  
-  .product-image-container {
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-  }
-  
-  .product-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-  }
-  
-  .product-card:hover .product-image {
-    transform: scale(1.2);
-  }
-  
-  .product-price {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #444;
-  }
-  
-  .btn-block {
-    width: 100%;
-  }
-  
-  .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 999;
-  }
-  
-  .modal-content {
-    background: rgb(14, 13, 13);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    width: 20%;
-    max-width: 500px;
-    position: relative;
-  }
-  
-  .close-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: transparent;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
-  
-  .modal-links .btn {
-    margin: 5px;
-    text-transform: uppercase;
-  }
-  
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor de la imagen */
+.product-image-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 250px; /* Ajustar según el diseño deseado */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Imagen del producto */
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product-image-container:hover .product-image {
+  transform: scale(1.1); /* Zoom al pasar el mouse */
+}
+
+/* Texto y botones centrados */
+.card-body {
+  padding: 1rem;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: black;
+}
+
+.product-card {
+  border: none;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-image-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.2);
+}
+
+.product-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #444;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: rgb(14, 13, 13);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 20%;
+  max-width: 500px;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.modal-links .btn {
+  margin: 5px;
+  text-transform: uppercase;
+}
+.color {
+  color: black;
+  font-size: 2.5rem;
+}
+.letra {
+  color: aliceblue;
+}
