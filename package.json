@@ -16,8 +16,8 @@
     "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
-    "homepage":"http://kadoshchocolate.com/",
-    "scripts": {
+  "homepage": "http://kadoshchocolate.com/",
+  "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -40,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/bootstrap": "^5.2.10"
   }
 }

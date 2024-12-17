@@ -2,15 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../Assets/css/Navbar.css'; // Archivo de estilos
 import logoImage from "../Styles/images/logo2.jpg";
+import 'bootstrap/dist/css/bootstrap.min.css'; // Importar los estilos de Bootstrap
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Importar Bootstrap JS con Popper incluido
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
         {/* Logo a la izquierda */}
-        <Link className="navbar-brand" to="/inicio">
+        <Link className="navbar-brand d-flex align-items-center" to="/inicio">
           <img src={logoImage} alt="Logo" className="navbar-logo" />
-         
         </Link>
 
         {/* Botón para dispositivos pequeños */}
@@ -27,8 +28,8 @@ const Navbar = () => {
         </button>
 
         {/* Enlaces de navegación */}
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto">
+        <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul className="navbar-nav">
             <li className="nav-item">
               <Link className="nav-link" to="/inicio">Inicio</Link>
             </li>

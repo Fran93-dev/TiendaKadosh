@@ -49,7 +49,7 @@ const SobreNosotros = () => {
           {/* Bienvenida */}
           <div className="row align-items-center mb-5">
             <div className="col-md-12 text-center">
-              <h3 className="section-title">Bienvenido@ a Kadosh</h3>
+              <h3 className="section-title">Bienvenid@ a Kadosh</h3>
               <p className="section-text">
                 El sabor auténtico del cacao en polvo. Aquí encontrarás una selección
                 premium de cacao en polvo, ideal para transformar tus recetas y disfrutar

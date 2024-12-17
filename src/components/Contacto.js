@@ -12,13 +12,14 @@ const FAQ = () => {
 
   return (
     <>
-      <div className="container my-5">
+      <div className="container my-5 contcolor">
         <h2 className="text-center mb-4">Preguntas Frecuentes</h2>
         <div>
           {preguntas.map((item, index) => (
-            <div key={index} className="mb-4">
+            <div key={index} className="mb-4"><div className='contcolor'>
               <h5 className="text-primary">{item.pregunta}</h5>
               <p>{item.respuesta}</p>
+              </div>
             </div>
           ))}
         </div>

@@ -1,47 +1,11 @@
-/* Estilos para las tarjetas de productos */
-.product-card {
-    border: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-.product-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-}
-
-/* Contenedor de la imagen */
-.product-image-container {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 250px; /* Ajustar según el diseño deseado */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Imagen del producto */
-.product-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.product-image-container:hover .product-image {
-  transform: scale(1.1); /* Zoom al pasar el mouse */
-}
-
-/* Texto y botones centrados */
-.card-body {
-  padding: 1rem;
-}
+/* Contenedor general */
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  color: black;
+  padding: 0 1rem;
 }
 
+/* Tarjetas de productos */
 .product-card {
   border: none;
   overflow: hidden;
@@ -56,7 +20,7 @@
 
 .product-image-container {
   width: 100%;
-  height: 200px;
+  height: 200px; /* Altura fija para las imágenes */
   overflow: hidden;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -83,6 +47,7 @@
   width: 100%;
 }
 
+/* --- Modal styles --- */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -101,9 +66,12 @@
   padding: 20px;
   border-radius: 10px;
   text-align: center;
-  width: 20%;
+  width: 90%; /* Ajuste para pantallas pequeñas */
   max-width: 500px;
   position: relative;
+  box-sizing: border-box;
+  margin-right: 800px;
+  width: 400px;
 }
 
 .close-button {
@@ -112,18 +80,78 @@
   right: 10px;
   background: transparent;
   border: none;
-  font-size: 1rem;
+  font-size: 1.5rem;
   cursor: pointer;
+  color: rgb(26, 25, 25);
 }
 
 .modal-links .btn {
   margin: 5px;
   text-transform: uppercase;
 }
+
+.modal-links .btn i {
+  margin-right: 5px;
+}
+
 .color {
   color: black;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
+
 .letra {
   color: aliceblue;
+}
+
+/* --- Responsive Styles --- */
+@media (max-width: 768px) {
+  .contentM {
+    width: 90%; /* Ancho en móviles */
+    max-width: 400px; 
+    padding: 250px;
+    justify-content: center;
+    text-align: center;
+    padding-left: 5%;
+    font: size 5px;
+    border-bottom: 2px solid #eee;
+    display: flex;
+    
+  }
+  .letra{
+    font-size: 0.8rem;
+    justify-content: center;
+    white-space: nowrap; /* Evita el salto de línea */
+    text-overflow: ellipsis;
+  }
+
+  .product-image-container {
+    height: 150px;
+    justify-content: center;
+    width: 60%;
+    padding-left: 30%;
+  }
+
+  .product-price {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .color {
+    font-size: 1.5rem;
+  }
+
+  .product-card {
+    margin: 0.5rem;
+  }
+
+  .modal-content {
+    width: 100%;
+    margin: 0 10px;
+  }
 }
