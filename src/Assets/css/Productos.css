@@ -107,7 +107,7 @@
 @media (max-width: 768px) {
   .contentM {
     width: 90%; /* Ancho en móviles */
-    max-width: 400px; 
+    max-width: 500px; 
     padding: 250px;
     justify-content: center;
     text-align: center;
@@ -151,7 +151,14 @@
   }
 
   .modal-content {
-    width: 100%;
-    margin: 0 10px;
+    width: 90%; /* Ancho en móviles */
+    max-width: 500px; 
+    padding: 250px;
+    justify-content: center;
+    text-align: center;
+    padding-left: 5%;
+    font: size 5px;
+    border-bottom: 2px solid #eee;
+    display: flex;
   }
 }

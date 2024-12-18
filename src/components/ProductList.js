@@ -75,7 +75,7 @@ const ProductList = () => {
             </div> 
             <div className="modal-links">
               <a
-                href={`https://wa.me/97858132?text=Hola, estoy interesado en ${selectedProduct.name}`}
+                href={`https://wa.me/+50497858132?text=Hola, estoy interesado en ${selectedProduct.name}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-success"
